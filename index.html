@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JASPER GIRAFFES | Official Football Microsite</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Lexend:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#795950",
+              "secondary-container": "#fed3c7",
+              "primary-container": "#ff8c00",
+              "error-container": "#ffdad6",
+              "on-secondary": "#ffffff",
+              "error": "#ba1a1a",
+              "on-tertiary-fixed": "#281900",
+              "tertiary-fixed-dim": "#ffba38",
+              "on-primary": "#ffffff",
+              "tertiary": "#7e5700",
+              "primary-fixed-dim": "#ffb77d",
+              "surface-variant": "#e5e2e1",
+              "on-primary-fixed-variant": "#6e3900",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed-variant": "#604100",
+              "primary-fixed": "#ffdcc3",
+              "on-secondary-fixed-variant": "#5d4037",
+              "on-error-container": "#93000a",
+              "outline-variant": "#ddc1ae",
+              "surface-dim": "#dcd9d9",
+              "on-secondary-fixed": "#2c160e",
+              "surface": "#fcf9f8",
+              "surface-container": "#f0eded",
+              "primary": "#904d00",
+              "outline": "#897362",
+              "secondary-fixed": "#ffdbd0",
+              "on-primary-container": "#623200",
+              "inverse-primary": "#ffb77d",
+              "surface-bright": "#fcf9f8",
+              "tertiary-container": "#e09d00",
+              "on-tertiary": "#ffffff",
+              "background": "#fcf9f8",
+              "inverse-on-surface": "#f3f0ef",
+              "on-surface-variant": "#564334",
+              "on-primary-fixed": "#2f1500",
+              "tertiary-fixed": "#ffdeac",
+              "on-background": "#1b1c1c",
+              "surface-tint": "#904d00",
+              "on-surface": "#1b1c1c",
+              "secondary-fixed-dim": "#e7bdb1",
+              "surface-container-highest": "#e5e2e1",
+              "surface-container-low": "#f6f3f2",
+              "inverse-surface": "#303030",
+              "surface-container-high": "#eae7e7",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#553900",
+              "secondary": "#77574d"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Lexend"],
+              "label": ["Lexend"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .giraffe-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30-15 30L15 30z' fill='%23FF8C00' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 max-w-screen-2xl mx-auto bg-orange-500 dark:bg-orange-600 no-border shadow-2xl shadow-orange-900/20">
+<div class="flex items-center gap-8">
+<span class="text-3xl font-black text-white italic tracking-tighter font-headline uppercase">JASPER GIRAFFES</span>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-white border-b-4 border-white pb-1 font-bold font-space-grotesk uppercase tracking-tighter" href="#">Home</a>
+<a class="text-orange-100 font-medium hover:text-white transition-colors font-space-grotesk uppercase tracking-tighter" href="#">Roster</a>
+<a class="text-orange-100 font-medium hover:text-white transition-colors font-space-grotesk uppercase tracking-tighter" href="#">Schedule</a>
+<a class="text-orange-100 font-medium hover:text-white transition-colors font-space-grotesk uppercase tracking-tighter" href="#">Fan Zone</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-white hover:bg-orange-400 dark:hover:bg-orange-700 transition-all rounded-lg active:scale-95 duration-150 ease-in-out">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button class="p-2 text-white hover:bg-orange-400 dark:hover:bg-orange-700 transition-all rounded-lg active:scale-95 duration-150 ease-in-out">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[870px] overflow-hidden flex items-end">
+<div class="absolute inset-0 z-0">
+<img alt="Jasper Football Players" class="w-full h-full object-cover grayscale-[0.2] contrast-125" data-alt="Intense action shot of collegiate football players in bright orange and deep brown uniforms charging forward on a sun-drenched stadium field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq-KM2HI20LBMjpLVjQlMKNIKjalrhLIzxCZ0VcGsmr4V0l5sci1eeybl2lDKQQusJ9Uwzo3sClM8z9lWwj4fIDRMTB5v_CycwTJufBWMaB3s6m_EEpEzLBwb4TVAWbIYGA8nbVXCy72VOFFMvv5TCnX9boxKkLnpHOVkNRGAOuTgm4LSqn4phTJAmvg_iRVvZPPUBK9kICEDsc1tTQHJIWPunYh5ojjOWpusLA0OjyMiuhlu2_OSGD4aUf5-1NRIyoLgSDOB7SBXm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute inset-0 bg-primary-container/10"></div>
+</div>
+<div class="container mx-auto px-6 relative z-10 pb-16">
+<div class="max-w-4xl">
+<span class="inline-block bg-primary-container text-on-primary-container px-4 py-1 font-bold font-headline uppercase tracking-widest text-sm mb-4">Season 2024 Launch</span>
+<h1 class="text-7xl md:text-9xl font-black font-headline uppercase tracking-tighter text-on-background leading-[0.85] mb-8">
+                        Protect <br/> <span class="text-primary">The Savanna.</span>
+</h1>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 font-bold font-headline uppercase tracking-widest rounded-md hover:brightness-110 active:scale-95 transition-all">
+                            Tickets &amp; Passes
+                        </button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 font-bold font-headline uppercase tracking-widest rounded-md hover:bg-surface-container-high transition-all">
+                            View Roster
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Game Tracker (Next Game Countdown) -->
+<section class="container mx-auto px-6 -mt-12 relative z-20">
+<div class="bg-stone-900 text-white p-1 rounded-lg shadow-2xl overflow-hidden">
+<div class="flex flex-col md:flex-row items-stretch">
+<div class="bg-primary-container p-8 md:w-1/3 flex flex-col justify-center">
+<p class="font-headline font-bold uppercase tracking-widest text-on-primary-container/80 text-sm mb-2">Next Matchup</p>
+<h2 class="text-4xl font-black font-headline text-on-primary-container leading-none uppercase italic">The Savannah Clash</h2>
+</div>
+<div class="flex-1 bg-stone-800 p-8 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex items-center gap-6">
+<div class="text-center">
+<div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-4xl text-primary-container">sports_football</span>
+</div>
+<p class="font-headline font-bold uppercase text-xs tracking-widest">Jasper</p>
+</div>
+<p class="text-5xl font-black font-headline text-primary-container">VS</p>
+<div class="text-center">
+<div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-4xl text-stone-400">shield</span>
+</div>
+<p class="font-headline font-bold uppercase text-xs tracking-widest">Towers State</p>
+</div>
+</div>
+<div class="h-16 w-px bg-stone-700 hidden md:block"></div>
+<div class="flex gap-4">
+<div class="text-center">
+<span class="block text-4xl font-black font-headline leading-none">04</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-stone-400">Days</span>
+</div>
+<span class="text-2xl font-black text-stone-600">:</span>
+<div class="text-center">
+<span class="block text-4xl font-black font-headline leading-none">12</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-stone-400">Hrs</span>
+</div>
+<span class="text-2xl font-black text-stone-600">:</span>
+<div class="text-center">
+<span class="block text-4xl font-black font-headline leading-none">45</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-stone-400">Min</span>
+</div>
+</div>
+<button class="bg-white text-stone-900 px-6 py-3 font-black font-headline uppercase tracking-widest text-xs hover:bg-primary-container hover:text-white transition-colors">
+                            Game Details
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Latest News Bento Grid -->
+<section class="py-24 container mx-auto px-6 giraffe-pattern">
+<div class="flex justify-between items-end mb-12">
+<div>
+<p class="text-primary font-bold font-headline uppercase tracking-widest text-sm mb-2">Kinetic Savanna Dispatch</p>
+<h2 class="text-5xl md:text-6xl font-black font-headline uppercase tracking-tighter text-on-background">Latest News</h2>
+</div>
+<a class="text-on-background font-bold font-headline uppercase tracking-widest text-sm hover:text-primary transition-colors flex items-center gap-2 mb-2" href="#">
+                    Archive <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
+<!-- Featured News Card -->
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden bg-stone-900">
+<img alt="Coach Speech" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="Dynamic shot of a football coach in a team jacket giving a passionate pre-game speech in a locker room, moody lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe7GhJzhRByEPbdIyvvMyqoYBtVAA_n4fhDxEnkK2JwJV-cOkuWn3O_XXSUN3jUFcTyHHHIdRDeZbkU66Kx8F_HfV67i1qROnBYA6pa9Z2yKewj3wBUsRr_PC8n5stth-7LQSdrEzCfMfn8Mv3ugBsdu11Oc-fBq9wWnBVjszHKnSh9SsUXA4AqZnvPUjtGYtr3a19ai9cp6DuBjEGq71WlaaR0kMWocy8OwYNbiOIvV6lQfbN5NaPoJfoI-OCDXgsxEfbX89XXyqZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-900/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<span class="text-primary-container font-black font-headline uppercase tracking-widest text-xs mb-4 block">Coaching Staff</span>
+<h3 class="text-4xl font-black font-headline text-white uppercase tracking-tight leading-none mb-4">Coach Vance: "The Herd Doesn't Wait for Opportunity"</h3>
+<p class="text-stone-300 font-body text-sm mb-6 max-w-md">An exclusive look into the mid-season defensive adjustments that are turning heads across the conference.</p>
+<button class="text-white font-bold font-headline uppercase tracking-widest text-xs border-b-2 border-primary-container pb-1 inline-block">Read Feature</button>
+</div>
+</div>
+<!-- Secondary News Card 1 -->
+<div class="md:col-span-2 relative group overflow-hidden bg-surface-container-low">
+<div class="flex h-full">
+<div class="flex-1 p-8">
+<span class="text-secondary font-bold font-headline uppercase tracking-widest text-[10px] mb-2 block">Academics</span>
+<h3 class="text-2xl font-black font-headline text-on-background uppercase tracking-tight leading-tight mb-4">Highest Team GPA in Giraffes History</h3>
+<button class="text-primary font-bold font-headline uppercase tracking-widest text-xs">Learn More</button>
+</div>
+<div class="w-1/3 h-full">
+<img alt="Students" class="w-full h-full object-cover grayscale" data-alt="Close-up of university students studying in a modern sun-drenched library, academic focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyn2HGDJNfV4rNHY0hGHrBU4I1Oo-r6lBzTsC-ZObs6Hv9kWaLjpQ895lh02pR5ikx0AAI77vj3LQILaF1L32az4heXfoZU9TF2av1Jvt6cUuq8WfgY4deV9ArccVlD8HJQiyUfCo19Y6dO7V-odf5ymqoG-aHqserP9L2aPNqoRAa1VBRis9dy24v2rbJMA33STI2JtqZXYK8SD6TG5CiMOMwzxaBQA8ZKF8BM5mmSjU9ehEubHElxutlyIv1WsrPG6Qwk0p5Fkro"/>
+</div>
+</div>
+</div>
+<!-- Secondary News Card 2 -->
+<div class="md:col-span-1 relative group overflow-hidden bg-primary-container">
+<div class="p-8">
+<span class="material-symbols-outlined text-on-primary-container text-4xl mb-4">stadium</span>
+<h3 class="text-2xl font-black font-headline text-on-primary-container uppercase tracking-tight leading-tight mb-4">Stadium Renovation Reveal</h3>
+<p class="text-on-primary-container/70 text-sm font-medium mb-4">Jasper Field is getting a high-tech overhaul for the 2025 season.</p>
+<span class="material-symbols-outlined text-on-primary-container">arrow_outward</span>
+</div>
+</div>
+<!-- Secondary News Card 3 -->
+<div class="md:col-span-1 relative group overflow-hidden bg-secondary">
+<div class="p-8">
+<span class="text-orange-200 font-bold font-headline uppercase tracking-widest text-[10px] mb-2 block">Fan Zone</span>
+<h3 class="text-2xl font-black font-headline text-white uppercase tracking-tight leading-tight mb-4">The Safari Tailgate Guide</h3>
+<p class="text-white/70 text-sm font-medium mb-4">Everything you need for the ultimate Jasper matchday experience.</p>
+<span class="material-symbols-outlined text-orange-400">local_fire_department</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Player Section (Asymmetric) -->
+<section class="py-24 bg-surface-container-highest overflow-hidden">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
+<div class="relative z-10 border-[16px] border-white shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+<img alt="Featured Player" class="w-full aspect-[4/5] object-cover" data-alt="Dramatic studio portrait of a powerful football player in an orange Jasper jersey, holding a helmet, intense gaze, side-lit highlighting physique." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALKdhwK7JhGNftX_5gVgmCuL1vorzB1xPA0VCDa-1G-NuwJmh8xoWKkx6s5i2qfeFLhqrSGAOJuuz0GWIPGUXEEG6FycfCAI_dEgXek6l4uMpv39Uv5NK0EcqRWM_aw8ebDM2GbD0h47Cz0gn66lgLFrT8zkYnOS1Dh3aFnNpPSFvxSUAar6cTjJOhNZuQhNdWUKdtRPi9U3Bb7nb9NcL09a8IqO1-9OVtCARqL8tywnuQuGSS8iMbPX5Pp_ciAaSzUM0Mlh8Wh38F"/>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-primary p-6 z-20 shadow-xl">
+<p class="text-white font-black font-headline text-6xl leading-none">#18</p>
+<p class="text-orange-200 font-bold font-headline uppercase tracking-widest text-xs">Wide Receiver</p>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<p class="text-primary font-bold font-headline uppercase tracking-widest text-sm mb-2">Spotlight Profile</p>
+<h2 class="text-6xl md:text-8xl font-black font-headline uppercase tracking-tighter text-on-background leading-[0.8] mb-8">Malik "The Bolt" Thorne</h2>
+<div class="space-y-6 mb-10">
+<div class="flex gap-4 items-center">
+<div class="bg-surface p-4 flex-1">
+<p class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1">Yards / G</p>
+<p class="text-3xl font-black font-headline text-on-background">142.5</p>
+</div>
+<div class="bg-surface p-4 flex-1">
+<p class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1">Touchdowns</p>
+<p class="text-3xl font-black font-headline text-on-background">12</p>
+</div>
+<div class="bg-surface p-4 flex-1">
+<p class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1">Speed</p>
+<p class="text-3xl font-black font-headline text-on-background">4.3s</p>
+</div>
+</div>
+<p class="text-on-surface-variant font-body leading-relaxed text-lg">
+                                Rising junior Malik Thorne is redefining the vertical game at Jasper. With a wingspan that rivals the stadium lights and a first step that leaves cornerbacks in the dust, Thorne is the heartbeat of our air raid offense.
+                            </p>
+</div>
+<button class="bg-on-background text-white px-10 py-5 font-bold font-headline uppercase tracking-widest rounded-md flex items-center gap-4 hover:bg-primary transition-all group">
+                            Full Stats &amp; Bio
+                            <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Support Section / Tonal Shift -->
+<section class="py-24 bg-stone-800 text-white">
+<div class="container mx-auto px-6 text-center">
+<h2 class="text-4xl md:text-6xl font-black font-headline uppercase tracking-tighter mb-8 max-w-3xl mx-auto leading-none">Become Part of the <span class="text-primary-container italic">Kinetic Savanna</span></h2>
+<p class="text-stone-400 font-body text-lg mb-12 max-w-xl mx-auto">Support Jasper University Athletics through donations, merchandise, or joining the fan club.</p>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="bg-primary-container text-on-primary-container px-8 py-4 font-black font-headline uppercase tracking-widest rounded hover:brightness-110 transition-all" href="#">Donate Now</a>
+<a class="border-2 border-stone-600 text-white px-8 py-4 font-black font-headline uppercase tracking-widest rounded hover:bg-stone-700 transition-all" href="#">Official Shop</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-800 dark:bg-stone-950 full-width py-12 px-8 tonal-shift bg-stone-900">
+<div class="w-full flex flex-col md:flex-row justify-between items-center gap-8 border-t border-stone-700 pt-12">
+<div class="text-center md:text-left">
+<span class="text-xl font-bold text-orange-500 font-headline uppercase tracking-tighter mb-2 block">Jasper University Athletics</span>
+<p class="font-lexend text-sm text-stone-300 max-w-xs">© 2024 Jasper University Athletics. All Rights Reserved. Kinetic Savanna Edition.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-stone-400 hover:text-white transition-colors font-lexend text-sm hover:text-orange-300 underline underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-stone-400 hover:text-white transition-colors font-lexend text-sm hover:text-orange-300 underline underline-offset-4" href="#">Terms of Service</a>
+<a class="text-stone-400 hover:text-white transition-colors font-lexend text-sm hover:text-orange-300 underline underline-offset-4" href="#">Contact Athletics</a>
+<a class="text-orange-400 font-semibold font-lexend text-sm hover:text-orange-300 underline underline-offset-4" href="#">Support the Herd</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-sm text-white">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-sm text-white">play_circle</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-sm text-white">rss_feed</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>
